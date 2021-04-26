@@ -1,0 +1,53 @@
+{
+  "name": "chargebee-test",
+  "version": "0.0.1",
+  "description": "chargebee-test",
+  "keywords": [
+    "chargebee",
+    "billing",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/urbanisierung/chargebee-test"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc --p tsconfig.json",
+    "dist": "node dist/index.js",
+    "test": "jest --config jest.config.js"
+  },
+  "author": "adam.urban@gmail.com",
+  "license": "...",
+  "dependencies": {
+    "chargebee-typescript": "^2.0.9",
+    "dotenv": "^8.2.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@types/jasmine": "^3.6.4",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.14.31",
+    "@typescript-eslint/eslint-plugin": "^4.15.2",
+    "@typescript-eslint/parser": "^4.15.2",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-prettier": "^3.3.1",
+    "jest": "^26.6.3",
+    "mixpanel": "^0.11.0",
+    "nyc": "^15.1.0",
+    "prettier": "2.2.1",
+    "testdouble": "^3.16.1",
+    "testdouble-jest": "^2.0.0",
+    "ts-jest": "^26.5.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.2"
+  }
+}
